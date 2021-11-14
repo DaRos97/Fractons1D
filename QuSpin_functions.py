@@ -180,7 +180,7 @@ def parity(x, N, sign_ptr, args):  # change + and -
     return P(x, N, args[0])
 
 
-def corr(times, H, N, basis): #change to auto_correlator
+def auto_correlator(times, H, N, basis): 
     no_checks = dict(check_symm=False, check_pcon=False, check_herm=False)
     psi = np.random.rand(H.shape[0]) + 1j*np.random.rand(H.shape[0])
     psi /= np.linalg.norm(psi)

@@ -25,7 +25,7 @@ op_dict = dict(op=qs.op, op_args=op_args)
 allowed_ops = ["+-zi", "+-zPMZ"]
 #### Basis
 basis = user_basis(np.uint32, N, op_dict, allowed_ops=set(allowed_ops[sps-2]), 
-                   sps=sps, pcon_dict=pcon_dict, parallel=True)
+                   sps=sps, pcon_dict=pcon_dict, parallel=True, **maps)
 #### Lists
 J_s = fs.interaction_list(N, fs.spin_ranges[sps-2][0])
 J_l = fs.interaction_list(N, fs.spin_ranges[sps-2][1])

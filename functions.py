@@ -152,3 +152,5 @@ def interaction_list(N,interaction_length):
         temp += [i for i in range(n,n+interaction_length)]
         J.append(temp)
     return J
+
+
