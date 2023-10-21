@@ -1,6 +1,0 @@
-use file input = 1
-spin = 0
-length = 20
-use highest subsector = 0
-charge = 0
-dipole moment = 0
